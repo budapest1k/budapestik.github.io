@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Оформление заказа — БитМаркет</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/checkout.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Оформление заказа</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="checkout.html" class="active">Оформление</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="order-form">
+      <label>
+        ФИО:
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Телефон:
+        <input type="tel" name="phone" required />
+      </label>
+      <label>
+        Адрес доставки:
+        <textarea name="address" required></textarea>
+      </label>
+
+      <h2>Список товаров:</h2>
+      <ul id="order-items"></ul>
+
+      <p id="order-total">Общая сумма: 0 руб.</p>
+
+      <button type="submit">Подтвердить заказ</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 БитМаркет</p>
+  </footer>
+</body>
+</html>

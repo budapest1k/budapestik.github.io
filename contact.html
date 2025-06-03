@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Контакты — БитМаркет</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="contact.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contact-form" class="contact-form">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 БитМаркет</p>
+    </footer>
+
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e){
+        e.preventDefault();
+        alert("Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.");
+        this.reset();
+    });
+    </script>
+</body>
+</html>

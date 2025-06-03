@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Корзина — БитМаркет</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/cart.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Корзина</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="cart.html" class="active">Корзина</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart-items" class="cart-items">
+    </section>
+
+    <section id="cart-summary" class="cart-summary">
+      <p id="total-price">Общая сумма: 0 руб.</p>
+      <button id="clear-cart">Очистить корзину</button>
+      <button id="checkout-btn">Оформить заказ</button>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 БитМаркет</p>
+  </footer>
+</body>
+</html>
+<script src="scripts/cart.js" defer></script>
