@@ -228,3 +228,47 @@ button:hover,
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+/* Контакты */
+.contact-info {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-info h2,
+.contact-info h3 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-info ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contact-info ul li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.contact-info ul li a:hover {
+  color: #003366;
+}
